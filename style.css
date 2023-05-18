@@ -10,7 +10,7 @@ img {
   border-radius: 10px;
   margin: auto;
   margin-top: 100px;
-
+  position: relative;
   display: flex;
   width: 1000px;
   height: 300px;
@@ -52,17 +52,29 @@ svg {
   gap: 940px;
 }
 .icon1{
-  left: -15px;
+  position: absolute;
+  left: -20px;
+  top:40%;
+}
+.icon2{
+  position: absolute;
+  right: -20px;
+  top:40%;
 }
 .btns {
   position: absolute;
+  display: flex;
   left: 50%;
-  transform: translate(-50%, 0);
-  bottom: 50%;
+  right:50%;
+  bottom: -20px;
 }
 .btn {
   height: 12px;
   width: 12px;
+  margin-left: 10px;
   border-radius: 50%;
   border: 2px solid rgb(1, 86, 58);
+}
+.btn:first-child{
+  background-color: rgb(1, 86, 58);
 }
